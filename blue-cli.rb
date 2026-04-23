@@ -5,21 +5,21 @@
 class BlueCli < Formula
   desc "CLI for Blue workspace management"
   homepage "https://blue.cc"
-  version "0.6.5"
+  version "0.6.6"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/heyblueteam/cli/releases/download/v0.6.5/blue_darwin_amd64.tar.gz"
-      sha256 "b4d92e0f886753684d957e1c035da4042d48ec1ae7cab5f1f5675b29fb7625cc"
+      url "https://github.com/heyblueteam/cli/releases/download/v0.6.6/blue_darwin_amd64.tar.gz"
+      sha256 "bb13a28c1527eb0e5837207bbedd0e2dd756df8fdee3f402b577d753eb0d818c"
 
       define_method(:install) do
         bin.install "blue"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/heyblueteam/cli/releases/download/v0.6.5/blue_darwin_arm64.tar.gz"
-      sha256 "9b9f8cf8726d3bc8ec6cb890733e2c5c0813f27dcb47b88c1b9a4daeae7c27eb"
+      url "https://github.com/heyblueteam/cli/releases/download/v0.6.6/blue_darwin_arm64.tar.gz"
+      sha256 "5c0691754acd40249b6ec4a8ae0898caab56df0a34e04639470762a65a7afaa9"
 
       define_method(:install) do
         bin.install "blue"
@@ -29,15 +29,15 @@ class BlueCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heyblueteam/cli/releases/download/v0.6.5/blue_linux_amd64.tar.gz"
-      sha256 "c9a3ac324518f05110b94748ecb8f68b8c93a99f34c47005e02aeb23aa0e534e"
+      url "https://github.com/heyblueteam/cli/releases/download/v0.6.6/blue_linux_amd64.tar.gz"
+      sha256 "d3d65d51183197073ae9d1ae7c3bcc2ea4a9fe60853ee29be627d0cc72496058"
       define_method(:install) do
         bin.install "blue"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heyblueteam/cli/releases/download/v0.6.5/blue_linux_arm64.tar.gz"
-      sha256 "babad5c4d14814dec673eee078eceab0a32e4cb7dddbc8689a252fe4b75648c6"
+      url "https://github.com/heyblueteam/cli/releases/download/v0.6.6/blue_linux_arm64.tar.gz"
+      sha256 "3cc781b17de4bb7a198593788baa5eefe3231ba4f6942b9a7b3875f907bbd414"
       define_method(:install) do
         bin.install "blue"
       end
