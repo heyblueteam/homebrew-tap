@@ -4,12 +4,12 @@ cask "cobalt" do
 
   on_macos do
     on_intel do
-      sha256 "247cb59a971da94f652b218cc47fb467536a56cabacac2f107f3b12a620a25ff"
+      sha256 "e6009011beaea13ddd2a1c1f5a0b2131e957047bea4e1a5fa7a00c50ba4f7456"
       url "https://github.com/heyblueteam/cobalt/releases/download/v#{version}/cobalt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/heyblueteam/cobalt"
     end
     on_arm do
-      sha256 "6c59044635f50cf25ee0bb020dc395827a684253e802e67731fab51866feac79"
+      sha256 "7f557ffc9bfcbf4a50e3fce005711dcfaacc46b9cccb056cf98c4c031a7f5da9"
       url "https://github.com/heyblueteam/cobalt/releases/download/v#{version}/cobalt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/heyblueteam/cobalt"
     end
@@ -17,12 +17,12 @@ cask "cobalt" do
 
   on_linux do
     on_intel do
-      sha256 "a1076a187826c01ad1157a0b8bb3b53051bdd512ffcce875d572f6035e9e206d"
+      sha256 "1a737a6440c59e6cf49700fd7c6cbab180b19268a48a933a35e362da55afdf2a"
       url "https://github.com/heyblueteam/cobalt/releases/download/v#{version}/cobalt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/heyblueteam/cobalt"
     end
     on_arm do
-      sha256 "ea5883d8699cb42226177ac8f1f1b7be8f21589413b4fe6ea7413809d26410b0"
+      sha256 "6d40a183388ebb3933c5e451b77a71bc80eec214c6bd35a3baa6b6f4bb6326e4"
       url "https://github.com/heyblueteam/cobalt/releases/download/v#{version}/cobalt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/heyblueteam/cobalt"
     end
